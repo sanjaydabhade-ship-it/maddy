@@ -1,24 +1,20 @@
+import React from "react";
 
-import React from 'react';
-
-export const WhyThisExists: React.FC = () => {
+const WhyThisExists: React.FC = () => {
   return (
-    <section id="why" className="py-24 bg-white border-y border-neutral-100">
-      <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto text-center space-y-8">
-          <div className="inline-block p-3 bg-red-50 rounded-2xl mb-4">
-            <span className="text-4xl">❤️</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-food-red">Why This Page Exists</h2>
-          <p className="text-xl md:text-2xl leading-relaxed text-neutral-600">
-            “This page exists because some dreams deserve to be seen, even if the content is still stuck in the corporate calendar.”
-          </p>
-          <p className="text-lg text-neutral-500 italic">
-            Life moves fast between spreadsheets and supply chains, but the flavor of Delhiwaale is too good to stay offline. 
-            We built this to remind you that your brand is ready to roar.
-          </p>
-        </div>
+    <section id="why" className="py-24 bg-white">
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-food-red mb-6">
+          Why This Page Exists
+        </h2>
+
+        <p className="text-lg text-neutral-700 leading-relaxed">
+          Because some food brands deserve an online presence,
+          even if the owner hasn’t found 30 uninterrupted minutes yet.
+        </p>
       </div>
     </section>
   );
 };
+
+export default WhyThisExists;
