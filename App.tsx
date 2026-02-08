@@ -20,7 +20,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-food-cream text-neutral-800 selection:bg-food-mustard selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-food-cream text-neutral-800 overflow-x-hidden">
       {/* Navigation */}
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -42,3 +42,28 @@ const App: React.FC = () => {
             <a href="#why" className="hover:text-food-red transition-colors">
               Why?
             </a>
+          </div>
+
+          <a
+            href="#cta"
+            className="bg-food-red text-white px-6 py-2 rounded-full font-semibold hover:bg-red-900 transition-all"
+          >
+            Send Content!
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        <Hero />
+        <About />
+        <FoodSection />
+        <WhyThisExists />
+        <CTA />
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
